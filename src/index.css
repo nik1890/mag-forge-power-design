@@ -2,39 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* MagForge Power Design - Advanced Technical Design System
+All colors MUST be HSL for proper theme support.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Technical Dark Theme Base */
+    --background: 220 13% 8%;
+    --foreground: 220 9% 93%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Surface Colors */
+    --card: 220 13% 10%;
+    --card-foreground: 220 9% 93%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 13% 10%;
+    --popover-foreground: 220 9% 93%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Technical Blue Primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 13% 8%;
+    --primary-glow: 217 91% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* AI Green System */
+    --ai: 142 76% 36%;
+    --ai-foreground: 220 13% 8%;
+    --ai-glow: 142 76% 50%;
+    --ai-muted: 142 30% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Conventional Blue-Gray */
+    --conventional: 215 20% 65%;
+    --conventional-foreground: 220 13% 8%;
+    --conventional-muted: 215 15% 35%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* System Colors */
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 9% 93%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 60%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --accent: 220 13% 18%;
+    --accent-foreground: 220 9% 93%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 220 13% 8%;
+
+    --warning: 25 95% 53%;
+    --warning-foreground: 220 13% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 13% 8%;
+
+    /* Technical Elements */
+    --border: 220 13% 20%;
+    --input: 220 13% 15%;
+    --ring: 217 91% 60%;
+
+    /* Gradients for Technical UI */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-ai: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 50%));
+    --gradient-hero: linear-gradient(180deg, hsl(220 13% 8%) 0%, hsl(220 13% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 13% 10%) 0%, hsl(220 13% 12%) 100%);
+
+    /* Technical Shadows */
+    --shadow-technical: 0 8px 32px hsl(217 91% 60% / 0.15);
+    --shadow-ai: 0 8px 32px hsl(142 76% 36% / 0.15);
+    --shadow-card: 0 4px 24px hsl(220 13% 4% / 0.3);
+    --shadow-glow: 0 0 24px hsl(217 91% 60% / 0.3);
+
+    /* Animation Timings */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
